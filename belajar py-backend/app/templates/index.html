@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Kopi Kami</title>
+</head>
+<body>
+    <header>
+        <h1>SELAMAT DATANG DI KOPI KAMI</h1>
+        <p>A Taste of Coffee</p>
+        <a href="/menu" class="btn">Dine with Us</a>
+    </header>
+    <section class="intro">
+        <h2>A KOPI FAVOURITE</h2>
+        <p>Kopi Kami lahir dari cinta akan rasa kopi terbaik. Setiap cangkir membawa Anda ke perjalanan rasa yang tak terlupakan.</p>
+        <a href="/menu" class="btn">Book Now</a>
+    </section>
+    <section class="flavors">
+        <h2>FLAVORS OF COFFEE</h2>
+        <div class="coffee-flavors">
+            <div class="flavor"><img src="{{ url_for('static', filename='espresso.jpeg') }}" alt="Espresso"><p>Espresso</p></div>
+            <div class="flavor"><img src="{{ url_for('static', filename='latte.jpeg') }}" alt="Latte"><p>Latte</p></div>
+            <div class="flavor"><img src="{{ url_for('static', filename='cappucino.jpg') }}" alt="Cappuccino"><p>Cappuccino</p></div>
+        </div>
+    </section>
+    <footer>
+        <h3>SEE YOU SOON</h3>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: contact@kopikami.com</p>
+    </footer>
+</body>
+</html>
